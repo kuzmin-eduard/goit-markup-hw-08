@@ -1,0 +1,8 @@
+.icon {
+    fill: currentColor;
+    display: flex;
+    align-items: center;
+    &--icon-send {
+      fill: var(--primary-white-color);
+    }
+  }
