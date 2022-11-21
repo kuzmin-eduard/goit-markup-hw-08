@@ -379,7 +379,7 @@ img {
 .navigation__link:hover::after, .navigation__link:focus::after {
   opacity: 1;
 }
-.navigation__link:hover::after, .navigation__link:focus::after {
+.navigation__link::after {
   position: absolute;
   content: "";
   display: block;
@@ -393,7 +393,7 @@ img {
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.navigation__link:hover--current::after, .navigation__link:focus--current::after {
+.navigation__link--current::after {
   position: absolute;
   content: "";
   display: block;
@@ -1335,6 +1335,9 @@ img {
   .navigation__logo {
     padding: 16px 0;
     margin-right: 87px;
+  }
+  .navigation__link {
+    padding: 23px 0;
   }
   .contact-list {
     -webkit-box-orient: vertical;

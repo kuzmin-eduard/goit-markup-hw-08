@@ -17,30 +17,34 @@
   <header class="page-header">
     <div class="container page-header__container">
       <nav class="navigation">
-        <a href="./index.html" class="logo page-header__logo ">Web<span class="logo__part">Studio</span></a>
-
-        <ul class="navigation-list">
+        <a href="./index.html" class="logo navigation__logo ">Web<span class="logo__part">Studio</span></a>
+        <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+          <svg class="icon menu-toggle__icon-menu" width="40" height="40">
+            <use xlink:href="./images/mobile-menu.svg#icon-mobile-menu"></use>
+          </svg>
+        </button>
+        <ul class="navigation__list">
           <li>
-            <a href="./index.html" class="navigation-list__link navigation-list__link--current">Студія</a>
+            <a href="./index.html" class="navigation__link navigation__link">Студія</a>
           </li>
           <li>
-            <a href="./portfolio.html" class="navigation-list__link">Портфоліо</a>
+            <a href="./portfolio.html" class="navigation__link--current">Портфоліо</a>
           </li>
           <li>
-            <a href="#" class="navigation-list__link">Контакти</a>
+            <a href="#" class="navigation__link">Контакти</a>
           </li>
         </ul>
       </nav>
 
       <ul class="contact-list">
-        <li>
+        <li class="contact-list__item">
           <a href="mailto:info@devstudio.com" class="contact-list__link">
             <svg class="icon contact-list__icon" width="16px" height="12px">
               <use xlink:href="./images/icons.svg#icon-mail"></use>
             </svg>
             info@devstudio.com</a>
         </li>
-        <li>
+        <li class="contact-list__item">
           <a href="tel:+380961111111" class="contact-list__link">
             <svg class="icon contact-list__icon" width="10px" height="16px">
               <use xlink:href="./images/icons.svg#icon-smartphone"></use>
@@ -215,10 +219,10 @@
   </main>
   <footer class="page-footer">
     <div class="container page-footer__container">
-      <div>
+      <div class="page-footer__description">
         <a href="./index.html" class="logo page-footer__logo">Web<span class="logo__footer">Studio</span></a>
         <address>
-          <ul>
+          <ul class="page-footer__list">
             <li class="page-footer__item">
               <a href="https://www.google.com.ua/maps/place/бул.+Леси+Украинки,+26,+Киев,+02000/@50.4265807,30.5361918,17z/data=!3m1!4b1!4m5!3m4!1s0x40d4cf0e033ecbe9:0x57a4dffefec77da0!8m2!3d50.4265807!4d30.5383858?hl=ru"
                 target="_blank" rel="noopener noreferrer" class="page-footer__address">м. Київ, пр-т Лесі Українки,
@@ -238,14 +242,14 @@
         <h3 class="footer-title">ПРИЄДНУЙТЕСЬ</h3>
         <ul class="social">
           <li>
-            <a class="social-links social-links--icon" href="#" target="_blank" rel="noopener noreferrer">
+            <a class="social__link social__link--icon" href="#" target="_blank" rel="noopener noreferrer">
               <svg class="icon" width="20px" height="20px">
                 <use xlink:href="./images/icons.svg#icon-instagram"></use>
               </svg>
             </a>
           </li>
           <li>
-            <a class="social-links social-links--icon" href="#" target="_blank" rel="noopener noreferrer">
+            <a class="social__link social__link--icon" href="#" target="_blank" rel="noopener noreferrer">
               <svg class="icon" width="20px" height="20px">
                 <use xlink:href="./images/icons.svg#icon-facebook"></use>
               </svg>
@@ -253,14 +257,14 @@
           </li>
 
           <li>
-            <a class="social-links social-links--icon" href="#" target="_blank" rel="noopener noreferrer">
+            <a class="social__link social__link--icon" href="#" target="_blank" rel="noopener noreferrer">
               <svg class="icon" width="20px" height="20px">
                 <use xlink:href="./images/icons.svg#icon-twitter"></use>
               </svg>
             </a>
           </li>
           <li>
-            <a class="social-links social-links--icon" href="#" target="_blank" rel="noopener noreferrer">
+            <a class="social__link social__link--icon" href="#" target="_blank" rel="noopener noreferrer">
               <svg class="icon" width="20px" height="20px">
                 <use xlink:href="./images/icons.svg#icon-linkedin"></use>
               </svg>
@@ -274,7 +278,7 @@
           <label class="footer-form__label">
             <input type="email" name="email" placeholder="E-mail">
           </label>
-          <button class="footer-button" type="submit">Підписатися
+          <button class="footer-form__button" type="submit">Підписатися
             <svg class="icon--icon-send" width="24px" height="24px">
               <use xlink:href="./images/send.svg#icon-send"></use>
             </svg>
@@ -282,8 +286,6 @@
         </form>
       </div>
     </div>
-
-
   </footer>
 </body>
 
