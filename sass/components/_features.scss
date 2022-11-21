@@ -1,5 +1,32 @@
 .features {
+  &__list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    // flex-wrap: wrap;
+  }
+  &__item {
+    padding-bottom: 0;
+  }
+  &__card {
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: var(--button-portfolio);
+    border-radius: 4px;
+    padding: 25px 0;
+    margin-bottom: 30px;
   }
+  &__title {
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    margin-bottom: 9px;
+  }
+  &__text {
+    font-size: 14px;
+    line-height: 1.71;
+  }
+}

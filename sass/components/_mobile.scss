@@ -1,0 +1,143 @@
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .section {
+    padding: 60px 0;
+  }
+  .logo {
+    font-size: 24px;
+    line-height: 1.1667;
+  }
+  .navigation {
+    width: 100%;
+  }
+  .navigation__logo {
+    padding: 16px 0;
+    margin-left: 0;
+    margin-right: auto;
+  }
+  .navigation__list,
+  .contact-list {
+    display: none;
+  }
+
+  .hero {
+    padding: 0;
+    &__container {
+      padding: 118px 60px;
+    }
+    &__title {
+      font-weight: 900;
+      font-size: 26px;
+      line-height: 1.6153;
+      width: 100%;
+    }
+    &__button {
+      padding: 10px 24px;
+    }
+  }
+
+  .features__title {
+    text-align: center;
+  }
+  .features__item {
+    max-width: 100%;
+  }
+  .features__list {
+    flex-wrap: wrap;
+  }
+
+  .work {
+    display: none;
+  }
+  .work__title,
+  .team__title,
+  .clients__title {
+    font-size: 28px;
+    line-height: 1.1785;
+    margin-bottom: 30px;
+  }
+
+  .team__list {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .page-footer__container {
+    flex-direction: column;
+    gap: 60px;
+    align-items: center;
+    text-align: center;
+  }
+  .footer-social {
+    margin: 0;
+  }
+  .footer-form {
+    margin: 0 auto;
+    width: 100%;
+  }
+  .footer-form__mail {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-form__label {
+    max-width: 450px;
+    width: 100%;
+  }
+
+  .filters-list {
+    gap: 15px 8px;
+    margin-bottom: 40px;
+  }
+  .filters-list__button-portfolio {
+    margin-bottom: 0;
+  }
+  .filters-img-list {
+    justify-content: center;
+  }
+  .backdrop__modal {
+    max-width: 450px;
+    width: 100%;
+    max-height: 609px;
+    height: 100%;
+  }
+  .checkbox__label {
+    font-size: 12px;
+    line-height: 1.1667;
+  }
+}
+
+.hero {
+  @media screen and(max-width: 767px) {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/hero-mobile.jpg);
+  }
+  @media (min-device-pixel-ratio: 2) and (max-width: 767px),
+    (min-resolution: 192dpi) and (max-width: 767px),
+    (min-resolution: 2dppx) and (max-width: 767px) {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/hero-mobile@2x.jpg);
+  }
+}
