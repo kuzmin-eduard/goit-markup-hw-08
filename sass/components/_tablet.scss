@@ -94,7 +94,7 @@
 
   .clients__item {
     flex-basis: calc((100% - 90px) / 3);
-    max-width: 100%;
+    width: 226px;
   }
   .clients__link {
     display: flex;
@@ -106,8 +106,11 @@
     flex-direction: column;
     flex-basis: calc(50% - 30px);
     align-items: center;
+
   }
   .page-footer__list {
+    display: flex;
+    flex-direction: column;
     align-items: center;
   }
   .page-footer__container {

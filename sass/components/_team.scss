@@ -1,6 +1,5 @@
 .team {
   background-color: var(--button-portfolio);
-  padding-bottom: 0;
   &__container {
     display: flex;
     flex-direction: column;
@@ -22,10 +21,13 @@
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
-    padding-top: 30px;
     padding-bottom: 30px;
+    width: 100%;
+   
   }
-
+  &__img{
+    width: 100%;
+  }
   &__title-name {
     color: var(--title-text-color);
     font-weight: 500;

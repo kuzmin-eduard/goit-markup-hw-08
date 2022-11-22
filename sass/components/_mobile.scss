@@ -70,7 +70,14 @@
     line-height: 1.1785;
     margin-bottom: 30px;
   }
-
+  .clients__item{
+    width: 210px;
+  }
+  .clients__link {
+    display: flex;
+    height: 92px;
+    width: 100%;
+  }
   .team__list {
     flex-wrap: wrap;
     align-items: center;
